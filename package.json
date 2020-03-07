@@ -1,0 +1,37 @@
+{
+  "name": "mocking-typescript-classes-with-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx tsc --sourcemap --declaration",
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^21.1.10",
+    "@types/node": "^13.9.0",
+    "@types/reflect-metadata": "^0.1.0",
+    "jest": "^21.2.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^21.2.2",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  }
+}
