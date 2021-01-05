@@ -19,7 +19,7 @@
     "typescript": "^2.6.1"
   },
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.21.1"
   },
   "jest": {
     "transform": {
